@@ -1,0 +1,32 @@
+program MediaTresValores;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  valor1, valor2, valor3, media: Real;
+begin
+  try
+    // Solicitar os três valores reais ao usuário
+    Write('Digite o primeiro valor real: ');
+    ReadLn(valor1);
+
+    Write('Digite o segundo valor real: ');
+    ReadLn(valor2);
+
+    Write('Digite o terceiro valor real: ');
+    ReadLn(valor3);
+
+    // Calcular a média
+    media := (valor1 + valor2 + valor3) / 3;
+
+    // Exibir a média com até 4 casas decimais
+    WriteLn(Format('A média dos valores é: %.4f', [media]));
+  except
+    on E: Exception do
+      WriteLn('Erro: ', E.ClassName, ' - ', E.Message);
+  end;
+end.
+
