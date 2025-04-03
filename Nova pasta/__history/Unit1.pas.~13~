@@ -1,0 +1,55 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.ExtCtrls;
+
+type
+  Tcadastro = class(TForm)
+    matriz: TStringGrid;
+    nome: TEdit;
+    Label1: TLabel;
+    email: TEdit;
+    senha: TEdit;
+    senha2: TEdit;
+    telefone: TMaskEdit;
+    enviar: TButton;
+    datas: TMaskEdit;
+    RadioGroup1: TRadioGroup;
+    procedure enviarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  cadastro: Tcadastro;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tcadastro.enviarClick(Sender: TObject);
+begin
+  matriz.cells[0,1]
+end;
+
+procedure Tcadastro.FormCreate(Sender: TObject);
+begin
+//
+matriz.cells[0,0] := 'Nome';
+matriz.cells[1,0] := 'E-mail';
+matriz.cells[2,0] := 'datas';
+matriz.cells[3,0] := 'telefone';
+matriz.cells[4,0] := 'senha';
+matriz.cells[5,0] := 'senha2';
+
+
+end;
+
+end.

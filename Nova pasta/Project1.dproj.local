@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/03/27 19:54:22.117,=C:\Users\guiro\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/27 19:55:02.010,C:\Users\guiro\Documentos\delphi\Nova pasta\Unit1.pas=C:\Users\guiro\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/27 19:55:02.010,C:\Users\guiro\Documentos\delphi\Nova pasta\Unit1.dfm=C:\Users\guiro\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/03/27 19:55:08.526,C:\Users\guiro\Documentos\delphi\Nova pasta\Project1.dproj=C:\Users\guiro\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
