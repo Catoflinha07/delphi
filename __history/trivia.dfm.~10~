@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 518
+  ClientWidth = 679
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object painel_superior: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 673
+    Height = 78
+    Align = alTop
+    BevelOuter = bvLowered
+    TabOrder = 0
+    VerticalAlignment = taAlignTop
+    object Label1: TLabel
+      AlignWithMargins = True
+      Left = 6
+      Top = 44
+      Width = 661
+      Height = 16
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'contador'
+      ExplicitLeft = 4
+      ExplicitTop = 24
+      ExplicitWidth = 665
+      ExplicitHeight = 33
+    end
+    object Edit1: TEdit
+      AlignWithMargins = True
+      Left = 4
+      Top = 4
+      Width = 665
+      Height = 32
+      Align = alTop
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      TextHint = 'digite um texto para pesquisa'
+      ExplicitLeft = 190
+      ExplicitTop = 9
+      ExplicitWidth = 326
+    end
+  end
+end

@@ -1,0 +1,72 @@
+unit trivia;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, IOUtils,
+  Generics.Collections;
+
+type
+  TForm1 = class(TForm)
+    painel_superior: TPanel;
+    Edit1: TEdit;
+    Label1: TLabel;
+    painel_pika: TPanel;
+    procedure FormCreate(Sender: TObject);
+  private
+    FPaises: TList<string>;
+
+    procedure CriarObjetosPaises;
+  
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  listapaises: TArray<string>;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.CriarObjetosPaises;
+const
+  PALAVRAS_POR_PANEL = 25;
+var
+  painel: TPanel;
+  pais: TLabel;
+begin
+  for var I := 0 to FPaises.Count - 1 do
+  begin
+    if (I = 0) or ((I + 1) mod PALAVRAS_POR_PANEL = 0) then
+    begin
+     Painel:= TPanel.create(self);
+     Painel.parent := painel_pika;
+     painel.Align := alLeft;
+     painel.width := 200;
+    end;
+     pais := TLabel.Create(self);
+     pais.parent := painel;
+     pais.Align := altop;
+     pais.Alignment := taCenter;
+     pais.font.size := 12;
+     pais.Caption := Fpaises.Items[I];
+     
+  end;
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  listapaises := TFile.ReadAllLines
+    ('C:\Users\guiro\Documentos\delphi\privia\paises.txt');
+
+  FPaises := TList<string>.create;
+  CriarObjetosPaises;
+  
+end;
+
+end.
