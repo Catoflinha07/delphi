@@ -2,7 +2,7 @@ program Project3;
 
 uses
   Vcl.Forms,
-  Unit3 in '..\delphi\trabbatata\Unit3.pas' {Trivia};
+  Unit3 in '..\trabbatata\Unit3.pas' {Trivia};
 
 {$R *.res}
 
