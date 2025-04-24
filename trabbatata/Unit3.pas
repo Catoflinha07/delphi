@@ -97,11 +97,11 @@ var
   Linhas: TArray<string>;
 begin
   try
-Linhas := TFile.ReadAllLines('C:\Users\Gustavo\Desktop\3∫ Semestre\Delphi\trabbatata\Paises.txt');
+Linhas := TFile.ReadAllLines('C:\Users\guiro\Documentos\delphi\trabbatata');
 
     if Length(Linhas) = 0 then
     begin
-      ShowMessage('O arquivo est· vazio.');
+      ShowMessage('O arquivo est√° vazio.');
       Exit;
     end;
 
